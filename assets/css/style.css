@@ -8,10 +8,11 @@
   }
   
   .card {
-    border: 1px solid black;
+    border: 1.2px solid black;
     color: black;
   }
 
   .card :hover {
+    background-color: rgb(238, 238, 238);
     color: blue;
   }
