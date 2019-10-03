@@ -1,3 +1,17 @@
 .card-columns {
-    column-count: 6;
+    column-count: 2;
+  }
+
+  #news-cards {
+    margin-left: 5%;
+    width: 90%;
+  }
+  
+  .card {
+    border: 1px solid black;
+    color: black;
+  }
+
+  .card :hover {
+    color: blue;
   }
