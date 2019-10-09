@@ -50,12 +50,12 @@ export default class Crypto {
 
   cryptoTemplate() {
     return `
-     <span>&ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp;</span><span>${this.btcName} &ensp; ${this.btcPrice} &ensp; ${this.btc24HourChange}%</span><span>&ensp; &ensp; &ensp; &ensp; &ensp;</span>
-     <span>${this.ethName} &ensp; ${this.ethPrice} &ensp; ${this.eth24HourChange}%</span><span>&ensp; &ensp; &ensp; &ensp; &ensp;</span>  
-     <span>${this.xrpName} &ensp; ${this.xrpPrice} &ensp; ${this.xrp24HourChange}%</span><span>&ensp; &ensp; &ensp; &ensp; &ensp;</span> 
-     <span>${this.ltcName} &ensp; ${this.ltcPrice} &ensp; ${this.ltc24HourChange}%</span><span>&ensp; &ensp; &ensp; &ensp; &ensp;</span>
-     <span>${this.xlmName} &ensp; ${this.xlmPrice} &ensp; ${this.xlm24HourChange}%</span><span>&ensp; &ensp; &ensp; &ensp; &ensp;</span>
-     <span>${this.linkName} &ensp; ${this.linkPrice} &ensp; ${this.link24HourChange}%</span><span>&ensp; &ensp; &ensp; &ensp; &ensp;</span>
+     <span>#${this.btcRank} ${this.btcName} &ensp; ${this.btcPrice} &ensp; ${this.btc24HourChange}%</span><span>&ensp; &ensp; &ensp; &ensp; &ensp;</span>
+     <span>#${this.ethRank} ${this.ethName} &ensp; ${this.ethPrice} &ensp; ${this.eth24HourChange}%</span><span>&ensp; &ensp; &ensp; &ensp; &ensp;</span>  
+     <span>#${this.xrpRank} ${this.xrpName} &ensp; ${this.xrpPrice} &ensp; ${this.xrp24HourChange}%</span><span>&ensp; &ensp; &ensp; &ensp; &ensp;</span> 
+     <span>#${this.ltcRank} ${this.ltcName} &ensp; ${this.ltcPrice} &ensp; ${this.ltc24HourChange}%</span><span>&ensp; &ensp; &ensp; &ensp; &ensp;</span>
+     <span>#${this.xlmRank} ${this.xlmName} &ensp; ${this.xlmPrice} &ensp; ${this.xlm24HourChange}%</span><span>&ensp; &ensp; &ensp; &ensp;</span>
+     <span>#${this.linkRank} ${this.linkName} &ensp; ${this.linkPrice} &ensp; ${this.link24HourChange}%</span><span>&ensp; &ensp; &ensp; &ensp;</span>
 
           `
   }
