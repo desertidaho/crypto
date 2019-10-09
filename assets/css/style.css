@@ -17,3 +17,9 @@
     background-color: rgb(238, 238, 238);
     color: blue;
   }
+
+  #marquee {
+    background-color: black;
+    color: white;
+
+  }

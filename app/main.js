@@ -1,9 +1,11 @@
 import NewsController from "./components/news/newsController.js";
+import CryptoController from "./components/crypto/cryptoController.js";
 
 class App {
   constructor() {
     this.controllers = {
-      newsController: new NewsController()
+      newsController: new NewsController(),
+      cryptoController: new CryptoController()
     }
   }
 }
