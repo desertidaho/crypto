@@ -123,6 +123,15 @@ export default class News {
     this.url40 = data[40].url;
     this.title40 = data[40].title;
 
+    this.sources = ''
+    for (let i = 0; i < data.length; i++) {
+      if (this.sources.includes(data[i].source_info.name)) {
+        continue
+      }
+      else {
+        this.sources += (data[i].source_info.name) + ' | '
+      }
+    }
   }
 
   newsTemplate() {
@@ -454,8 +463,14 @@ export default class News {
             </div>
         </div>
       </a>
-
           `
+  }
+
+
+  sourcesTemplate() {
+    return `
+    <p>${this.sources}</p>
+    `
   }
 
 }

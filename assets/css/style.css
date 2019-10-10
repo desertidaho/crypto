@@ -21,5 +21,12 @@
   #marquee {
     background-color: black;
     color: white;
+  }
 
+  body {
+    overflow-x: hidden;
+  }
+
+  #sources {
+    margin-left: 25%;
   }
