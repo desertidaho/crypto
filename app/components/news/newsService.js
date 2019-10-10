@@ -39,5 +39,9 @@ export default class NewsService {
       })
   }
 
+  refreshNews() {
+    setInterval(this.getNews, 120000)
+  }
+
 
 }

@@ -18,6 +18,7 @@ export default class NewsController {
     _ns.addSubscriber('news', drawNews)
     _ns.addSubscriber('news', drawSources)
     _ns.getNews()
+    _ns.refreshNews()
   }
 
 }
