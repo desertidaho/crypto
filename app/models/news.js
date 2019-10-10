@@ -185,7 +185,7 @@ export default class News {
 
 <a href="${this.url7}" target="_blank">
         <div class="card my-2  ">
-            <div class="card-body">...
+            <div class="card-body">
               <h6 class="card-title">${this.title7}...</h6>
             </div>
         </div>
