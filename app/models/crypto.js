@@ -44,7 +44,7 @@ export default class Crypto {
       this.marketCapUsd += parseInt(Number(data[i].marketCapUsd).toFixed())
     };
     this.marketCapUsd = this.marketCapUsd + 5000000000
-    this.marketCapUsd = ('$' + this.marketCapUsd).slice(0, 4) + '.' + ('' + this.marketCapUsd).slice(4, 6) + ' Billion'
+    this.marketCapUsd = ('$' + this.marketCapUsd).slice(0, 4) + '.' + ('' + this.marketCapUsd).slice(4, 6) + 'B'
   }
 
 
@@ -56,7 +56,12 @@ export default class Crypto {
      <span>#${this.ltcRank} ${this.ltcName} &ensp; ${this.ltcPrice} &ensp; ${this.ltc24HourChange}%</span><span>&ensp; &ensp; &ensp; &ensp; &ensp;</span>
      <span>#${this.xlmRank} ${this.xlmName} &ensp; ${this.xlmPrice} &ensp; ${this.xlm24HourChange}%</span><span>&ensp; &ensp; &ensp; &ensp;</span>
      <span>#${this.linkRank} ${this.linkName} &ensp; ${this.linkPrice} &ensp; ${this.link24HourChange}%</span><span>&ensp; &ensp; &ensp; &ensp;</span>
+          `
+  }
 
+  marketCapTemplate() {
+    return `
+      Crypto News (Market ${this.marketCapUsd})
           `
   }
 
