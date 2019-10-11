@@ -59,9 +59,9 @@ export default class Crypto {
           `
   }
 
-  marketCapTemplate() {
+  btcTemplate() {
     return `
-      Crypto News (Market ${this.marketCapUsd})
+      Crypto News  (BTC ${this.btcPrice})
           `
   }
 
