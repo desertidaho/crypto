@@ -510,7 +510,7 @@ export default class News {
 
   sourcesTemplate() {
     return `
-    <p>${this.sources}</p>
+    <p>${this.sources.split(" | ").length} Sources: ${this.sources}</p>
     `
   }
 
