@@ -1,5 +1,12 @@
 export default class News {
   constructor(data) {
+    // for (let i = 0; i < data.length; i++) {
+    //   this.url = data[i].url;
+    //   this.source = data[i].source_info.name;
+    //   this.title = data[i].title
+    // }
+
+
     this.url0 = data[0].url;
     this.source0 = data[0].source_info.name;
     this.title0 = data[0].title;
@@ -176,337 +183,349 @@ export default class News {
   }
 
   newsTemplate() {
+    // for (let i = 0; i < 50; i++) {
+    //   return `
+    //   <a href="${this.url}" target="_blank">
+    //     <div class="card my-2  ">
+    //         <div class="card-body">
+    //           <h6 class="card-title">${this.title}... [${this.source}]</h6>
+    //         </div>
+    //     </div>
+    //   </a>
+    //   `
+    // }
+
     return `
-<a href="${this.url0}" target="_blank">
-        <div class="card my-2  ">
-            <div class="card-body">
-              <h6 class="card-title">[${this.source0}] ${this.title0}...</h6>
-            </div>
-        </div>
-      </a>
+  <a href="${this.url0}" target="_blank">
+          <div class="card my-2  ">
+              <div class="card-body">
+                <h6 class="card-title">${this.title0}... [${this.source0}]</h6>
+              </div>
+          </div>
+        </a>
 
-<a href="${this.url1}" target="_blank">
-        <div class="card my-2  ">
-            <div class="card-body">
-            <h6 class="card-title">[${this.source1}] ${this.title1}...</h6>
-            </div>
-        </div>
-      </a>
+  <a href="${this.url1}" target="_blank">
+          <div class="card my-2  ">
+              <div class="card-body">
+              <h6 class="card-title">${this.title1}... [${this.source1}]</h6>
+              </div>
+          </div>
+        </a>
 
-<a href="${this.url2}" target="_blank">
-        <div class="card my-2  ">
-            <div class="card-body">
-            <h6 class="card-title">[${this.source2}] ${this.title2}...</h6>
-            </div>
-        </div>
-      </a>
+  <a href="${this.url2}" target="_blank">
+          <div class="card my-2  ">
+              <div class="card-body">
+              <h6 class="card-title">${this.title2}... [${this.source2}]</h6>
+              </div>
+          </div>
+        </a>
 
-<a href="${this.url3}" target="_blank">
-        <div class="card my-2  ">
-            <div class="card-body">
-            <h6 class="card-title">[${this.source3}] ${this.title3}...</h6>
-            </div>
-        </div>
-      </a>
+  <a href="${this.url3}" target="_blank">
+          <div class="card my-2  ">
+              <div class="card-body">
+              <h6 class="card-title">${this.title3}... [${this.source3}]</h6>
+              </div>
+          </div>
+        </a>
 
-<a href="${this.url4}" target="_blank">
-        <div class="card my-2  ">
-            <div class="card-body">
-              <h6 class="card-title">[${this.source4}] ${this.title4}...</h6>
-            </div>
-        </div>
-      </a>
+  <a href="${this.url4}" target="_blank">
+          <div class="card my-2  ">
+              <div class="card-body">
+                <h6 class="card-title">${this.title4}... [${this.source4}]</h6>
+              </div>
+          </div>
+        </a>
 
-<a href="${this.url5}" target="_blank">
-        <div class="card my-2  ">
-            <div class="card-body">
-              <h6 class="card-title">[${this.source5}] ${this.title5}...</h6>
-            </div>
-        </div>
-      </a>
+  <a href="${this.url5}" target="_blank">
+          <div class="card my-2  ">
+              <div class="card-body">
+                <h6 class="card-title">${this.title5}... [${this.source5}]</h6>
+              </div>
+          </div>
+        </a>
 
-<a href="${this.url6}" target="_blank">
-        <div class="card my-2  ">
-            <div class="card-body">
-              <h6 class="card-title">[${this.source6}] ${this.title6}...</h6>
-            </div>
-        </div>
-      </a>
+  <a href="${this.url6}" target="_blank">
+          <div class="card my-2  ">
+              <div class="card-body">
+                <h6 class="card-title">${this.title6}... [${this.source6}]</h6>
+              </div>
+          </div>
+        </a>
 
-<a href="${this.url7}" target="_blank">
-        <div class="card my-2  ">
-            <div class="card-body">
-              <h6 class="card-title">[${this.source7}] ${this.title7}...</h6>
-            </div>
-        </div>
-      </a>
+  <a href="${this.url7}" target="_blank">
+          <div class="card my-2  ">
+              <div class="card-body">
+                <h6 class="card-title">${this.title7}... [${this.source7}]</h6>
+              </div>
+          </div>
+        </a>
 
-<a href="${this.url8}" target="_blank">
-        <div class="card my-2  ">
-            <div class="card-body">
-              <h6 class="card-title">[${this.source8}] ${this.title8}...</h6>
-            </div>
-        </div>
-      </a>
+  <a href="${this.url8}" target="_blank">
+          <div class="card my-2  ">
+              <div class="card-body">
+                <h6 class="card-title">${this.title8}... [${this.source8}]</h6>
+              </div>
+          </div>
+        </a>
 
-<a href="${this.url9}" target="_blank">
-        <div class="card my-2  ">
-            <div class="card-body">
-              <h6 class="card-title">[${this.source9}] ${this.title9}...</h6>
-            </div>
-        </div>
-      </a>
+  <a href="${this.url9}" target="_blank">
+          <div class="card my-2  ">
+              <div class="card-body">
+                <h6 class="card-title">${this.title9}... [${this.source9}]</h6>
+              </div>
+          </div>
+        </a>
 
-<a href="${this.url10}" target="_blank">
-        <div class="card my-2  ">
-            <div class="card-body">
-              <h6 class="card-title">[${this.source10}] ${this.title10}...</h6>
-            </div>
-        </div>
-      </a>
+  <a href="${this.url10}" target="_blank">
+          <div class="card my-2  ">
+              <div class="card-body">
+                  <h6 class="card-title"> ${this.title10}... [${this.source1}</h6>
+              </div>
+          </div>
+        </a>
 
-<a href="${this.url11}" target="_blank">
-        <div class="card my-2  ">
-            <div class="card-body">
-              <h6 class="card-title">[${this.source11}] ${this.title11}...</h6>
-            </div>
-        </div>
-      </a>
+  <a href="${this.url11}" target="_blank">
+          <div class="card my-2  ">
+              <div class="card-body">
+                  <h6 class="card-title"> ${this.title11}... [${this.source1}</h6>
+              </div>
+          </div>
+        </a>
 
-<a href="${this.url12}" target="_blank">
-        <div class="card my-2  ">
-            <div class="card-body">
-              <h6 class="card-title">[${this.source12}] ${this.title12}...</h6>
-            </div>
-        </div>
-      </a>
+  <a href="${this.url12}" target="_blank">
+          <div class="card my-2  ">
+              <div class="card-body">
+                  <h6 class="card-title"> ${this.title12}... [${this.source1}</h6>
+              </div>
+          </div>
+        </a>
 
-<a href="${this.url13}" target="_blank">
-        <div class="card my-2  ">
-            <div class="card-body">
-              <h6 class="card-title">[${this.source13}] ${this.title13}...</h6>
-            </div>
-        </div>
-      </a>
+  <a href="${this.url13}" target="_blank">
+          <div class="card my-2  ">
+              <div class="card-body">
+                  <h6 class="card-title"> ${this.title13}... [${this.source1}</h6>
+              </div>
+          </div>
+        </a>
 
-<a href="${this.url14}" target="_blank">
-        <div class="card my-2  ">
-            <div class="card-body">
-              <h6 class="card-title">[${this.source14}] ${this.title14}...</h6>
-            </div>
-        </div>
-      </a>
+  <a href="${this.url14}" target="_blank">
+          <div class="card my-2  ">
+              <div class="card-body">
+                  <h6 class="card-title"> ${this.title14}... [${this.source1}</h6>
+              </div>
+          </div>
+        </a>
 
-<a href="${this.url15}" target="_blank">
-        <div class="card my-2  ">
-            <div class="card-body">
-              <h6 class="card-title">[${this.source15}] ${this.title15}...</h6>
-            </div>
-        </div>
-      </a>
+  <a href="${this.url15}" target="_blank">
+          <div class="card my-2  ">
+              <div class="card-body">
+                  <h6 class="card-title"> ${this.title15}... [${this.source1}</h6>
+              </div>
+          </div>
+        </a>
 
-<a href="${this.url16}" target="_blank">
-        <div class="card my-2  ">
-            <div class="card-body">
-              <h6 class="card-title">[${this.source16}] ${this.title16}...</h6>
-            </div>
-        </div>
-      </a>
+  <a href="${this.url16}" target="_blank">
+          <div class="card my-2  ">
+              <div class="card-body">
+                  <h6 class="card-title"> ${this.title16}... [${this.source1}</h6>
+              </div>
+          </div>
+        </a>
 
-<a href="${this.url17}" target="_blank">
-        <div class="card my-2  ">
-            <div class="card-body">
-              <h6 class="card-title">[${this.source17}] ${this.title17}...</h6>
-            </div>
-        </div>
-      </a>
+  <a href="${this.url17}" target="_blank">
+          <div class="card my-2  ">
+              <div class="card-body">
+                  <h6 class="card-title"> ${this.title17}... [${this.source1}</h6>
+              </div>
+          </div>
+        </a>
 
-<a href="${this.url18}" target="_blank">
-        <div class="card my-2  ">
-            <div class="card-body">
-              <h6 class="card-title">[${this.source18}] ${this.title18}...</h6>
-            </div>
-        </div>
-      </a>
+  <a href="${this.url18}" target="_blank">
+          <div class="card my-2  ">
+              <div class="card-body">
+                  <h6 class="card-title"> ${this.title18}... [${this.source1}</h6>
+              </div>
+          </div>
+        </a>
 
-<a href="${this.url19}" target="_blank">
-        <div class="card my-2  ">
-            <div class="card-body">
-              <h6 class="card-title">[${this.source19}] ${this.title19}...</h6>
-            </div>
-        </div>
-      </a>
+  <a href="${this.url19}" target="_blank">
+          <div class="card my-2  ">
+              <div class="card-body">
+                  <h6 class="card-title"> ${this.title19}... [${this.source1}</h6>
+              </div>
+          </div>
+        </a>
 
-<a href="${this.url20}" target="_blank">
-        <div class="card my-2  ">
-            <div class="card-body">
-              <h6 class="card-title">[${this.source20}] ${this.title20}...</h6>
-            </div>
-        </div>
-      </a>
+  <a href="${this.url20}" target="_blank">
+          <div class="card my-2  ">
+              <div class="card-body">
+                  <h6 class="card-title"> ${this.title20}... [${this.source2}</h6>
+              </div>
+          </div>
+        </a>
 
-<a href="${this.url21}" target="_blank">
-        <div class="card my-2  ">
-            <div class="card-body">
-              <h6 class="card-title">[${this.source21}] ${this.title21}...</h6>
-            </div>
-        </div>
-      </a>
+  <a href="${this.url21}" target="_blank">
+          <div class="card my-2  ">
+              <div class="card-body">
+                  <h6 class="card-title"> ${this.title21}... [${this.source2}</h6>
+              </div>
+          </div>
+        </a>
 
-<a href="${this.url22}" target="_blank">
-        <div class="card my-2  ">
-            <div class="card-body">
-              <h6 class="card-title">[${this.source22}] ${this.title22}...</h6>
-            </div>
-        </div>
-      </a>
+  <a href="${this.url22}" target="_blank">
+          <div class="card my-2  ">
+              <div class="card-body">
+                  <h6 class="card-title"> ${this.title22}... [${this.source2}</h6>
+              </div>
+          </div>
+        </a>
 
-<a href="${this.url23}" target="_blank">
-        <div class="card my-2  ">
-            <div class="card-body">
-              <h6 class="card-title">[${this.source23}] ${this.title23}...</h6>
-            </div>
-        </div>
-      </a>
+  <a href="${this.url23}" target="_blank">
+          <div class="card my-2  ">
+              <div class="card-body">
+                  <h6 class="card-title"> ${this.title23}... [${this.source2}</h6>
+              </div>
+          </div>
+        </a>
 
-<a href="${this.url24}" target="_blank">
-        <div class="card my-2  ">
-            <div class="card-body">
-              <h6 class="card-title">[${this.source24}] ${this.title24}...</h6>
-            </div>
-        </div>
-      </a>
+  <a href="${this.url24}" target="_blank">
+          <div class="card my-2  ">
+              <div class="card-body">
+                  <h6 class="card-title"> ${this.title24}... [${this.source2}</h6>
+              </div>
+          </div>
+        </a>
 
-<a href="${this.url25}" target="_blank">
-        <div class="card my-2  ">
-            <div class="card-body">
-              <h6 class="card-title">[${this.source25}] ${this.title25}...</h6>
-            </div>
-        </div>
-      </a>
+  <a href="${this.url25}" target="_blank">
+          <div class="card my-2  ">
+              <div class="card-body">
+                  <h6 class="card-title"> ${this.title25}... [${this.source2}</h6>
+              </div>
+          </div>
+        </a>
 
-<a href="${this.url26}" target="_blank">
-        <div class="card my-2  ">
-            <div class="card-body">
-              <h6 class="card-title">[${this.source26}] ${this.title26}...</h6>
-            </div>
-        </div>
-      </a>
+  <a href="${this.url26}" target="_blank">
+          <div class="card my-2  ">
+              <div class="card-body">
+                  <h6 class="card-title"> ${this.title26}... [${this.source2}</h6>
+              </div>
+          </div>
+        </a>
 
-<a href="${this.url27}" target="_blank">
-        <div class="card my-2  ">
-            <div class="card-body">
-              <h6 class="card-title">[${this.source27}] ${this.title27}...</h6>
-            </div>
-        </div>
-      </a>
+  <a href="${this.url27}" target="_blank">
+          <div class="card my-2  ">
+              <div class="card-body">
+                  <h6 class="card-title"> ${this.title27}... [${this.source2}</h6>
+              </div>
+          </div>
+        </a>
 
-<a href="${this.url28}" target="_blank">
-        <div class="card my-2  ">
-            <div class="card-body">
-              <h6 class="card-title">[${this.source28}] ${this.title28}...</h6>
-            </div>
-        </div>
-      </a>
+  <a href="${this.url28}" target="_blank">
+          <div class="card my-2  ">
+              <div class="card-body">
+                  <h6 class="card-title"> ${this.title28}... [${this.source2}</h6>
+              </div>
+          </div>
+        </a>
 
-<a href="${this.url29}" target="_blank">
-        <div class="card my-2  ">
-            <div class="card-body">
-              <h6 class="card-title">[${this.source29}] ${this.title29}...</h6>
-            </div>
-        </div>
-      </a>
+  <a href="${this.url29}" target="_blank">
+          <div class="card my-2  ">
+              <div class="card-body">
+                  <h6 class="card-title"> ${this.title29}... [${this.source2}</h6>
+              </div>
+          </div>
+        </a>
 
-<a href="${this.url30}" target="_blank">
-        <div class="card my-2  ">
-            <div class="card-body">
-              <h6 class="card-title">[${this.source30}] ${this.title30}...</h6>
-            </div>
-        </div>
-      </a>
+  <a href="${this.url30}" target="_blank">
+          <div class="card my-2  ">
+              <div class="card-body">
+                  <h6 class="card-title"> ${this.title30}... [${this.source3}</h6>
+              </div>
+          </div>
+        </a>
 
-<a href="${this.url31}" target="_blank">
-        <div class="card my-2  ">
-            <div class="card-body">
-              <h6 class="card-title">[${this.source31}] ${this.title31}...</h6>
-            </div>
-        </div>
-      </a>
+  <a href="${this.url31}" target="_blank">
+          <div class="card my-2  ">
+              <div class="card-body">
+                <h6 class="card-title">${this.title31}... [${this.source31}]</h6>
+              </div>
+          </div>
+        </a>
 
-<a href="${this.url32}" target="_blank">
-        <div class="card my-2  ">
-            <div class="card-body">
-              <h6 class="card-title">[${this.source32}] ${this.title32}...</h6>
-            </div>
-        </div>
-      </a>
+  <a href="${this.url32}" target="_blank">
+          <div class="card my-2  ">
+              <div class="card-body">
+                <h6 class="card-title">${this.title32}... [${this.source32}]</h6>
+              </div>
+          </div>
+        </a>
 
-<a href="${this.url33}" target="_blank">
-        <div class="card my-2  ">
-            <div class="card-body">
-              <h6 class="card-title">[${this.source33}] ${this.title33}...</h6>
-            </div>
-        </div>
-      </a>
+  <a href="${this.url33}" target="_blank">
+          <div class="card my-2  ">
+              <div class="card-body">
+                <h6 class="card-title">${this.title33}... [${this.source33}]</h6>
+              </div>
+          </div>
+        </a>
 
-<a href="${this.url34}" target="_blank">
-        <div class="card my-2  ">
-            <div class="card-body">
-              <h6 class="card-title">[${this.source34}] ${this.title34}...</h6>
-            </div>
-        </div>
-      </a>
+  <a href="${this.url34}" target="_blank">
+          <div class="card my-2  ">
+              <div class="card-body">
+                <h6 class="card-title">${this.title34}... [${this.source34}]</h6>
+              </div>
+          </div>
+        </a>
 
-<a href="${this.url35}" target="_blank">
-        <div class="card my-2  ">
-            <div class="card-body">
-              <h6 class="card-title">[${this.source35}] ${this.title35}...</h6>
-            </div>
-        </div>
-      </a>
+  <a href="${this.url35}" target="_blank">
+          <div class="card my-2  ">
+              <div class="card-body">
+                <h6 class="card-title">${this.title35}... [${this.source35}]</h6>
+              </div>
+          </div>
+        </a>
 
-<a href="${this.url36}" target="_blank">
-        <div class="card my-2  ">
-            <div class="card-body">
-              <h6 class="card-title">[${this.source36}] ${this.title36}...</h6>
-            </div>
-        </div>
-      </a>
+  <a href="${this.url36}" target="_blank">
+          <div class="card my-2  ">
+              <div class="card-body">
+                <h6 class="card-title">${this.title36}... [${this.source36}]</h6>
+              </div>
+          </div>
+        </a>
 
-<a href="${this.url37}" target="_blank">
-        <div class="card my-2  ">
-            <div class="card-body">
-              <h6 class="card-title">[${this.source37}] ${this.title37}...</h6>
-            </div>
-        </div>
-      </a>
+  <a href="${this.url37}" target="_blank">
+          <div class="card my-2  ">
+          <div class="card-body">
+          <h6 class="card-title">${this.title37}... [${this.source37}]</h6>
+              </div>
+          </div>
+        </a>
 
-<a href="${this.url38}" target="_blank">
-        <div class="card my-2  ">
-            <div class="card-body">
-              <h6 class="card-title">[${this.source38}] ${this.title38}...</h6>
-            </div>
-        </div>
-      </a>
+  <a href="${this.url38}" target="_blank">
+          <div class="card my-2  ">
+          <div class="card-body">
+          <h6 class="card-title">${this.title38}... [${this.source38}]</h6>
+              </div>
+          </div>
+        </a>
 
-<a href="${this.url39}" target="_blank">
-        <div class="card my-2  ">
-            <div class="card-body">
-              <h6 class="card-title">[${this.source39}] ${this.title39}...</h6>
-            </div>
-        </div>
-      </a>
+  <a href="${this.url39}" target="_blank">
+          <div class="card my-2  ">
+          <div class="card-body">
+          <h6 class="card-title">${this.title39}... [${this.source39}]</h6>
+              </div>
+          </div>
+        </a>
 
-<a href="${this.url40}" target="_blank">
-        <div class="card my-2  ">
-            <div class="card-body">
-              <h6 class="card-title">[${this.source40}] ${this.title40}...</h6>
-            </div>
-        </div>
-      </a>
-          `
+  <a href="${this.url40}" target="_blank">
+          <div class="card my-2  ">
+              <div class="card-body">
+                <h6 class="card-title">${this.title40}... [${this.source40}]</h6>
+              </div>
+          </div>
+        </a}
+ 
+            `
   }
-
 
   sourcesTemplate() {
     return `
