@@ -279,7 +279,7 @@ export default class News {
   <a href="${this.url10}" target="_blank">
           <div class="card my-2  ">
               <div class="card-body">
-                  <h6 class="card-title"> ${this.title10}... [${this.source1}</h6>
+                  <h6 class="card-title"> ${this.title10}... [${this.source1}]</h6>
               </div>
           </div>
         </a>
@@ -287,7 +287,7 @@ export default class News {
   <a href="${this.url11}" target="_blank">
           <div class="card my-2  ">
               <div class="card-body">
-                  <h6 class="card-title"> ${this.title11}... [${this.source1}</h6>
+                  <h6 class="card-title"> ${this.title11}... [${this.source1}]</h6>
               </div>
           </div>
         </a>
@@ -295,7 +295,7 @@ export default class News {
   <a href="${this.url12}" target="_blank">
           <div class="card my-2  ">
               <div class="card-body">
-                  <h6 class="card-title"> ${this.title12}... [${this.source1}</h6>
+                  <h6 class="card-title"> ${this.title12}... [${this.source1}]</h6>
               </div>
           </div>
         </a>
@@ -303,7 +303,7 @@ export default class News {
   <a href="${this.url13}" target="_blank">
           <div class="card my-2  ">
               <div class="card-body">
-                  <h6 class="card-title"> ${this.title13}... [${this.source1}</h6>
+                  <h6 class="card-title"> ${this.title13}... [${this.source1}]</h6>
               </div>
           </div>
         </a>
@@ -311,7 +311,7 @@ export default class News {
   <a href="${this.url14}" target="_blank">
           <div class="card my-2  ">
               <div class="card-body">
-                  <h6 class="card-title"> ${this.title14}... [${this.source1}</h6>
+                  <h6 class="card-title"> ${this.title14}... [${this.source1}]</h6>
               </div>
           </div>
         </a>
@@ -319,7 +319,7 @@ export default class News {
   <a href="${this.url15}" target="_blank">
           <div class="card my-2  ">
               <div class="card-body">
-                  <h6 class="card-title"> ${this.title15}... [${this.source1}</h6>
+                  <h6 class="card-title"> ${this.title15}... [${this.source1}]</h6>
               </div>
           </div>
         </a>
@@ -327,7 +327,7 @@ export default class News {
   <a href="${this.url16}" target="_blank">
           <div class="card my-2  ">
               <div class="card-body">
-                  <h6 class="card-title"> ${this.title16}... [${this.source1}</h6>
+                  <h6 class="card-title"> ${this.title16}... [${this.source1}]</h6>
               </div>
           </div>
         </a>
@@ -335,7 +335,7 @@ export default class News {
   <a href="${this.url17}" target="_blank">
           <div class="card my-2  ">
               <div class="card-body">
-                  <h6 class="card-title"> ${this.title17}... [${this.source1}</h6>
+                  <h6 class="card-title"> ${this.title17}... [${this.source1}]</h6>
               </div>
           </div>
         </a>
@@ -343,7 +343,7 @@ export default class News {
   <a href="${this.url18}" target="_blank">
           <div class="card my-2  ">
               <div class="card-body">
-                  <h6 class="card-title"> ${this.title18}... [${this.source1}</h6>
+                  <h6 class="card-title"> ${this.title18}... [${this.source1}]</h6>
               </div>
           </div>
         </a>
@@ -351,7 +351,7 @@ export default class News {
   <a href="${this.url19}" target="_blank">
           <div class="card my-2  ">
               <div class="card-body">
-                  <h6 class="card-title"> ${this.title19}... [${this.source1}</h6>
+                  <h6 class="card-title"> ${this.title19}... [${this.source1}]</h6>
               </div>
           </div>
         </a>
@@ -359,7 +359,7 @@ export default class News {
   <a href="${this.url20}" target="_blank">
           <div class="card my-2  ">
               <div class="card-body">
-                  <h6 class="card-title"> ${this.title20}... [${this.source2}</h6>
+                  <h6 class="card-title"> ${this.title20}... [${this.source2}]</h6>
               </div>
           </div>
         </a>
@@ -367,7 +367,7 @@ export default class News {
   <a href="${this.url21}" target="_blank">
           <div class="card my-2  ">
               <div class="card-body">
-                  <h6 class="card-title"> ${this.title21}... [${this.source2}</h6>
+                  <h6 class="card-title"> ${this.title21}... [${this.source2}]</h6>
               </div>
           </div>
         </a>
@@ -375,7 +375,7 @@ export default class News {
   <a href="${this.url22}" target="_blank">
           <div class="card my-2  ">
               <div class="card-body">
-                  <h6 class="card-title"> ${this.title22}... [${this.source2}</h6>
+                  <h6 class="card-title"> ${this.title22}... [${this.source2}]</h6>
               </div>
           </div>
         </a>
@@ -383,7 +383,7 @@ export default class News {
   <a href="${this.url23}" target="_blank">
           <div class="card my-2  ">
               <div class="card-body">
-                  <h6 class="card-title"> ${this.title23}... [${this.source2}</h6>
+                  <h6 class="card-title"> ${this.title23}... [${this.source2}]</h6>
               </div>
           </div>
         </a>
@@ -391,7 +391,7 @@ export default class News {
   <a href="${this.url24}" target="_blank">
           <div class="card my-2  ">
               <div class="card-body">
-                  <h6 class="card-title"> ${this.title24}... [${this.source2}</h6>
+                  <h6 class="card-title"> ${this.title24}... [${this.source2}]</h6>
               </div>
           </div>
         </a>
@@ -399,7 +399,7 @@ export default class News {
   <a href="${this.url25}" target="_blank">
           <div class="card my-2  ">
               <div class="card-body">
-                  <h6 class="card-title"> ${this.title25}... [${this.source2}</h6>
+                  <h6 class="card-title"> ${this.title25}... [${this.source2}]</h6>
               </div>
           </div>
         </a>
@@ -407,7 +407,7 @@ export default class News {
   <a href="${this.url26}" target="_blank">
           <div class="card my-2  ">
               <div class="card-body">
-                  <h6 class="card-title"> ${this.title26}... [${this.source2}</h6>
+                  <h6 class="card-title"> ${this.title26}... [${this.source2}]</h6>
               </div>
           </div>
         </a>
@@ -415,7 +415,7 @@ export default class News {
   <a href="${this.url27}" target="_blank">
           <div class="card my-2  ">
               <div class="card-body">
-                  <h6 class="card-title"> ${this.title27}... [${this.source2}</h6>
+                  <h6 class="card-title"> ${this.title27}... [${this.source2}]</h6>
               </div>
           </div>
         </a>
@@ -423,7 +423,7 @@ export default class News {
   <a href="${this.url28}" target="_blank">
           <div class="card my-2  ">
               <div class="card-body">
-                  <h6 class="card-title"> ${this.title28}... [${this.source2}</h6>
+                  <h6 class="card-title"> ${this.title28}... [${this.source2}]</h6>
               </div>
           </div>
         </a>
@@ -431,7 +431,7 @@ export default class News {
   <a href="${this.url29}" target="_blank">
           <div class="card my-2  ">
               <div class="card-body">
-                  <h6 class="card-title"> ${this.title29}... [${this.source2}</h6>
+                  <h6 class="card-title"> ${this.title29}... [${this.source2}]</h6>
               </div>
           </div>
         </a>
@@ -439,7 +439,7 @@ export default class News {
   <a href="${this.url30}" target="_blank">
           <div class="card my-2  ">
               <div class="card-body">
-                  <h6 class="card-title"> ${this.title30}... [${this.source3}</h6>
+                  <h6 class="card-title"> ${this.title30}... [${this.source3}]</h6>
               </div>
           </div>
         </a>
@@ -525,7 +525,7 @@ export default class News {
         </a}
  
             `
-  }
+  }]
 
   sourcesTemplate() {
     return `
