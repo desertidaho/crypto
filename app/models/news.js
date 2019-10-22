@@ -525,7 +525,7 @@ export default class News {
         </a}
  
             `
-  }]
+  }
 
   sourcesTemplate() {
     return `
