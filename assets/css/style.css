@@ -19,7 +19,7 @@
   }
 
   #marquee {
-    background-color: black;
+    background: linear-gradient(to right, rgb(48, 46, 46) 60%, rgb(77, 47, 247));
     color: white;
   }
 
