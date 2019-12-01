@@ -30,3 +30,9 @@
   #sources {
     margin-left: 25%;
   }
+
+  @media only screen and (max-device-width: 780px) {
+.card-columns {
+    column-count: 1;
+  }
+    }
