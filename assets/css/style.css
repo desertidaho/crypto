@@ -20,7 +20,8 @@
 
   #marquee {
     background: linear-gradient(to right, rgb(48, 46, 46) 60%, rgb(77, 47, 247));
-    color: white;
+    color: rgb(48, 46, 46);
+    font-size: 2rem;
   }
 
   body {
@@ -32,14 +33,15 @@
   }
 
   @media only screen and (max-device-width: 780px) {
-.card-columns {
+h1 {
+  margin-left: 0.5rem;
+}
+
+    .card-columns {
     column-count: 1;
   }
 
    #marquee {
     background: linear-gradient(to right, rgb(48, 46, 46) 60%, rgb(77, 47, 247));
-    text-indent: 100%;
-    white-space: nowrap;
-    overflow: hidden;
   }
     }

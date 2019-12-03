@@ -4,7 +4,7 @@ const _cs = new CryptoService()
 
 function drawCrypto() {
   let template = _cs.Crypto.cryptoTemplate()
-  document.querySelector('#marquee').innerHTML = template
+  document.querySelector('#marquee').innerHTML = "|"
 }
 
 function drawMarketCap() {
