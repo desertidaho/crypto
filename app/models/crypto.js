@@ -1,41 +1,65 @@
 export default class Crypto {
   constructor(data) {
     for (let i = 0; i < data.length; i++) {
-      if (data[i].id == 'bitcoin') {
-        this.btcRank = data[i].rank
-        this.btcName = data[i].name
-        this.btcPrice = '$' + Number(data[i].priceUsd).toFixed(2)
-        this.btc24HourChange = Number(data[i].changePercent24Hr).toFixed(2)
+      if (i == 0) {
+        this.rank0 = data[i].rank
+        this.name0 = data[i].name
+        this.price0 = '$' + Number(data[i].priceUsd).toFixed(2)
+        this.twentyFourHoursChange0 = Number(data[i].changePercent24Hr).toFixed(2)
       }
-      if (data[i].id == 'ethereum') {
-        this.ethRank = data[i].rank
-        this.ethName = data[i].name
-        this.ethPrice = '$' + Number(data[i].priceUsd).toFixed(2);
-        this.eth24HourChange = Number(data[i].changePercent24Hr).toFixed(2)
+      if (i == 1) {
+        this.rank1 = data[i].rank
+        this.name1 = data[i].name
+        this.price1 = '$' + Number(data[i].priceUsd).toFixed(2);
+        this.twentyFourHoursChange1 = Number(data[i].changePercent24Hr).toFixed(2)
       }
-      if (data[i].id == 'ripple') {
-        this.xrpRank = data[i].rank
-        this.xrpName = data[i].name
-        this.xrpPrice = '$' + Number(data[i].priceUsd).toFixed(2);
-        this.xrp24HourChange = Number(data[i].changePercent24Hr).toFixed(2)
+      if (i == 2) {
+        this.rank2 = data[i].rank
+        this.name2 = data[i].name
+        this.price2 = '$' + Number(data[i].priceUsd).toFixed(2);
+        this.twentyFourHoursChange2 = Number(data[i].changePercent24Hr).toFixed(2)
       }
-      if (data[i].id == 'litecoin') {
-        this.ltcRank = data[i].rank
-        this.ltcName = data[i].name
-        this.ltcPrice = '$' + Number(data[i].priceUsd).toFixed(2);
-        this.ltc24HourChange = Number(data[i].changePercent24Hr).toFixed(2)
+      if (i == 3) {
+        this.rank3 = data[i].rank
+        this.name3 = data[i].name
+        this.price3 = '$' + Number(data[i].priceUsd).toFixed(2);
+        this.twentyFourHoursChange3 = Number(data[i].changePercent24Hr).toFixed(2)
       }
-      if (data[i].id == 'stellar') {
-        this.xlmRank = data[i].rank
-        this.xlmName = data[i].name
-        this.xlmPrice = '$' + Number(data[i].priceUsd).toFixed(2);
-        this.xlm24HourChange = Number(data[i].changePercent24Hr).toFixed(2)
+      if (i == 4) {
+        this.rank4 = data[i].rank
+        this.name4 = data[i].name
+        this.price4 = '$' + Number(data[i].priceUsd).toFixed(2);
+        this.twentyFourHoursChange4 = Number(data[i].changePercent24Hr).toFixed(2)
       }
-      if (data[i].id == 'chainlink') {
-        this.linkRank = data[i].rank
-        this.linkName = data[i].name
-        this.linkPrice = '$' + Number(data[i].priceUsd).toFixed(2);
-        this.link24HourChange = Number(data[i].changePercent24Hr).toFixed(2)
+      if (i == 5) {
+        this.rank5 = data[i].rank
+        this.name5 = data[i].name
+        this.price5 = '$' + Number(data[i].priceUsd).toFixed(2);
+        this.twentyFourHoursChange5 = Number(data[i].changePercent24Hr).toFixed(2)
+      }
+      if (i == 6) {
+        this.rank6 = data[i].rank
+        this.name6 = data[i].name
+        this.price6 = '$' + Number(data[i].priceUsd).toFixed(2);
+        this.twentyFourHoursChange6 = Number(data[i].changePercent24Hr).toFixed(2)
+      }
+      if (i == 7) {
+        this.rank7 = data[i].rank
+        this.name7 = data[i].name
+        this.price7 = '$' + Number(data[i].priceUsd).toFixed(2);
+        this.twentyFourHoursChange7 = Number(data[i].changePercent24Hr).toFixed(2)
+      }
+      if (i == 8) {
+        this.rank8 = data[i].rank
+        this.name8 = data[i].name
+        this.price8 = '$' + Number(data[i].priceUsd).toFixed(2);
+        this.twentyFourHoursChange8 = Number(data[i].changePercent24Hr).toFixed(2)
+      }
+      if (i == 9) {
+        this.rank9 = data[i].rank
+        this.name9 = data[i].name
+        this.price9 = '$' + Number(data[i].priceUsd).toFixed(2);
+        this.twentyFourHoursChange9 = Number(data[i].changePercent24Hr).toFixed(2)
       }
     }
 
@@ -50,18 +74,22 @@ export default class Crypto {
 
   cryptoTemplate() {
     return `
-     <span>#${this.btcRank} ${this.btcName} &ensp; ${this.btcPrice} &ensp; ${this.btc24HourChange}%</span><span>&ensp; &ensp; &ensp; &ensp; &ensp;</span>
-     <span>#${this.ethRank} ${this.ethName} &ensp; ${this.ethPrice} &ensp; ${this.eth24HourChange}%</span><span>&ensp; &ensp; &ensp; &ensp; &ensp;</span>  
-     <span>#${this.xrpRank} ${this.xrpName} &ensp; ${this.xrpPrice} &ensp; ${this.xrp24HourChange}%</span><span>&ensp; &ensp; &ensp; &ensp; &ensp;</span> 
-     <span>#${this.ltcRank} ${this.ltcName} &ensp; ${this.ltcPrice} &ensp; ${this.ltc24HourChange}%</span><span>&ensp; &ensp; &ensp; &ensp; &ensp;</span>
-     <span>#${this.xlmRank} ${this.xlmName} &ensp; ${this.xlmPrice} &ensp; ${this.xlm24HourChange}%</span><span>&ensp; &ensp; &ensp; &ensp;</span>
-     <span>#${this.linkRank} ${this.linkName} &ensp; ${this.linkPrice} &ensp; ${this.link24HourChange}%</span><span>&ensp; &ensp; &ensp; &ensp;</span>
-          `
+     <span>#${this.rank0} ${this.name0} &ensp; ${this.price0} &ensp; ${this.twentyFourHoursChange0}%</span><span>&ensp; &ensp; &ensp; &ensp; &ensp;</span>
+     <span>#${this.rank1} ${this.name1} &ensp; ${this.price1} &ensp; ${this.twentyFourHoursChange1}%</span><span>&ensp; &ensp; &ensp; &ensp; &ensp;</span>  
+     <span>#${this.rank2} ${this.name2} &ensp; ${this.price2} &ensp; ${this.twentyFourHoursChange2}%</span><span>&ensp; &ensp; &ensp; &ensp; &ensp;</span> 
+     <span>#${this.rank3} ${this.name3} &ensp; ${this.price3} &ensp; ${this.twentyFourHoursChange3}%</span><span>&ensp; &ensp; &ensp; &ensp; &ensp;</span>
+     <span>#${this.rank4} ${this.name4} &ensp; ${this.price4} &ensp; ${this.twentyFourHoursChange4}%</span><span>&ensp; &ensp; &ensp; &ensp;</span></span>
+     <span>#${this.rank5} ${this.name5} &ensp; ${this.price5} &ensp; ${this.twentyFourHoursChange5}%</span><span>&ensp; &ensp; &ensp; &ensp;     
+     <span>#${this.rank6} ${this.name6} &ensp; ${this.price6} &ensp; ${this.twentyFourHoursChange6}%</span><span>&ensp; &ensp; &ensp; &ensp;</span></span>
+     <span>#${this.rank7} ${this.name7} &ensp; ${this.price7} &ensp; ${this.twentyFourHoursChange7}%</span><span>&ensp; &ensp; &ensp; &ensp;</span></span>
+     <span>#${this.rank8} ${this.name8} &ensp; ${this.price8} &ensp; ${this.twentyFourHoursChange8}%</span><span>&ensp; &ensp; &ensp; &ensp;</span></span>
+     <span>#${this.rank9} ${this.name9} &ensp; ${this.price9} &ensp; ${this.twentyFourHoursChange9}%</span><span>&ensp; &ensp; &ensp; &ensp;</span></span>
+     `
   }
 
   btcTemplate() {
     return `
-      Crypto News  (BTC ${this.btcPrice})
+      Crypto News  (BTC ${this.price0})
           `
   }
 
