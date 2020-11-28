@@ -5,7 +5,8 @@ export default class News {
       this.newsArray.push({
         url: data[i].url,
         source: data[i].source_info.name,
-        title: data[i].title
+        title: data[i].title,
+        sourceUrl: data[i].source + '.com'
       })
     }
 
@@ -37,9 +38,21 @@ export default class News {
   }
 
   sourcesTemplate() {
-    return `
-    <p>${this.sources.split(" | ").length} Sources: ${this.sources}</p>
-    `
+    let template = ""
+    for (let i = 0; i <= this.newsArray.length - 1; i++) {
+      if (this.sources.includes(this.newsArray[i].source)) {
+        continue
+      }
+      else {
+        template +=
+          `
+        <a href="${[this.newsArray[i].sourceUrl]}" target="_blank">
+          <p>${this.sources.split(" | ").length} Sources: ${this.sources}</p>
+        </a>
+      `
+      }
+    }
+    return template
   }
 
 }
