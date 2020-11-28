@@ -6,12 +6,10 @@ export default class News {
         url: data[i].url,
         source: data[i].source_info.name,
         title: data[i].title,
-        sourceUrl: data[i].source + '.com'
+        sourceUrl: data[i].source
       })
-    }
 
-    this.sources = ''
-    for (let i = 0; i < data.length; i++) {
+      this.sources = ''
       if (this.sources.includes(data[i].source_info.name)) {
         continue
       }
@@ -19,6 +17,7 @@ export default class News {
         this.sources += (data[i].source_info.name) + ' | '
       }
     }
+
   }
 
   newsTemplate() {
@@ -40,18 +39,44 @@ export default class News {
   sourcesTemplate() {
     let template = ""
     for (let i = 0; i <= this.newsArray.length - 1; i++) {
-      if (this.sources.includes(this.newsArray[i].source)) {
+      if (template.includes(this.newsArray[i].source)) {
         continue
+      }
+      else if (this.newsArray[i].source == "Decrypt") {
+        console.log(this.newsArray)
+        template +=
+          `
+        <a href="https://${[this.newsArray[i].sourceUrl]}.co" target="_blank">
+          <span class="mr-3">${this.newsArray[i].source}</span>
+        </a>
+      `
+      }
+      else if (this.newsArray[i].source == "TheBlock") {
+        template +=
+          `
+        <a href="https://${[this.newsArray[i].sourceUrl]}crypto.com" target="_blank">
+          <span class="mr-3">${this.newsArray[i].source}</span>
+        </a>
+      `
+      }
+      else if (this.newsArray[i].source == "Bitcoin.com") {
+        template +=
+          `
+        <a href="https://news.${[this.newsArray[i].sourceUrl]}" target="_blank">
+          <span class="mr-3">${this.newsArray[i].source}</span>
+        </a>
+      `
       }
       else {
         template +=
           `
-        <a href="${[this.newsArray[i].sourceUrl]}" target="_blank">
-          <p>${this.sources.split(" | ").length} Sources: ${this.sources}</p>
+        <a href="https://${[this.newsArray[i].sourceUrl]}.com" target="_blank">
+          <span class="mr-3">${this.newsArray[i].source}</span>
         </a>
       `
       }
     }
+    console.log(template)
     return template
   }
 
