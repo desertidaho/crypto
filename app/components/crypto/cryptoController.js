@@ -8,8 +8,8 @@ function drawCrypto() {
 }
 
 function drawMarketCap() {
-  let template = _cs.Crypto.btcTemplate()
-  document.title = template
+  // let template = _cs.Crypto.btcTemplate()
+  // document.title = template
 }
 
 
