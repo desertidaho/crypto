@@ -2,7 +2,7 @@ import News from "../../models/news.js";
 
 // @ts-ignore
 const _newsApi = axios.create({
-  baseURL: 'https://cors-anywhere.herokuapp.com/https://min-api.cryptocompare.com/data/v2/news/?lang=EN',
+  baseURL: 'https://min-api.cryptocompare.com/data/v2/news/?lang=EN',
   timeout: 20000,
   headers: { content_type: 'application/x-www-form-urlencoded' },
   params: { access_key: '55c1a6ab5caed516aea2dffc35932e39ac9cf84f2c065b9b453e1c461875bda0' },
