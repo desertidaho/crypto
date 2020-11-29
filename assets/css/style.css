@@ -32,6 +32,11 @@
     margin-left: 25%;
   }
 
+  #sources
+  span {
+    color: blue;
+  }
+
   @media only screen and (max-device-width: 780px) {
 h1 {
   margin-left: 0.5rem;

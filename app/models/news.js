@@ -43,10 +43,9 @@ export default class News {
         continue
       }
       else if (this.newsArray[i].source == "Decrypt") {
-        console.log(this.newsArray)
         template +=
           `
-        <a href="https://${[this.newsArray[i].sourceUrl]}.co" target="_blank">
+        <a href="https://${[this.newsArray[i].sourceUrl]}.co" target="_blank" style="text-decoration:none;">
           <span class="mr-3">${this.newsArray[i].source}</span>
         </a>
       `
@@ -54,7 +53,7 @@ export default class News {
       else if (this.newsArray[i].source == "TheBlock") {
         template +=
           `
-        <a href="https://${[this.newsArray[i].sourceUrl]}crypto.com" target="_blank">
+        <a href="https://${[this.newsArray[i].sourceUrl]}crypto.com" target="_blank" style="text-decoration:none;">
           <span class="mr-3">${this.newsArray[i].source}</span>
         </a>
       `
@@ -62,7 +61,7 @@ export default class News {
       else if (this.newsArray[i].source == "Bitcoin.com") {
         template +=
           `
-        <a href="https://news.${[this.newsArray[i].sourceUrl]}" target="_blank">
+        <a href="https://news.${[this.newsArray[i].sourceUrl]}" target="_blank" style="text-decoration:none;">
           <span class="mr-3">${this.newsArray[i].source}</span>
         </a>
       `
@@ -70,7 +69,7 @@ export default class News {
       else {
         template +=
           `
-        <a href="https://${[this.newsArray[i].sourceUrl]}.com" target="_blank">
+        <a href="https://${[this.newsArray[i].sourceUrl]}.com" target="_blank" style="text-decoration:none;">
           <span class="mr-3">${this.newsArray[i].source}</span>
         </a>
       `
