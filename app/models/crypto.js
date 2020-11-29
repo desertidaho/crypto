@@ -93,4 +93,10 @@ export default class Crypto {
           `
   }
 
+  marketCap() {
+    return `
+    Crypto Market Capitalization: ${this.marketCapUsd}
+    `
+  }
+
 }

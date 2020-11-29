@@ -1,4 +1,5 @@
 import Crypto from "../../models/crypto.js";
+import BlockCypher from "../../models/cypher.js";
 
 // @ts-ignore
 const _cryptoApi = axios.create({
@@ -6,14 +7,23 @@ const _cryptoApi = axios.create({
   timeout: 15000
 });
 
+// @ts-ignore
+const _blockCypherApi = axios.create({
+  baseURL: 'https://api.blockcypher.com/v1/btc/main',
+  timeout: 15000
+});
+
 let _state = {
   crypto: {},
-  marketCap: {}
+  marketCap: {},
+  blockCypher: {}
 }
 
 let _subscribers = {
   crypto: [],
-  marketCap: []
+  marketCap: [],
+  blockCypher: []
+
 }
 
 function _setState(prop, data) {
@@ -23,7 +33,7 @@ function _setState(prop, data) {
 
 
 //Public
-export default class PriceService {
+export default class CryptoService {
   addSubscriber(prop, fn) {
     _subscribers[prop].push(fn)
   }
@@ -36,6 +46,10 @@ export default class PriceService {
     return _state.marketCap
   }
 
+  get BlockCypher() {
+    return _state.blockCypher
+  }
+
   getCrypto() {
     _cryptoApi.get()
       .then(res => {
@@ -45,6 +59,15 @@ export default class PriceService {
 
   refresh() {
     setInterval(this.getCrypto, 20000)
+    setInterval(this.getBlockCypher, 600000)
+  }
+
+  getBlockCypher() {
+    _blockCypherApi.get()
+      .then(res => {
+        console.log(res.data)
+        _setState('blockCypher', new BlockCypher(res.data))
+      })
   }
 
 }

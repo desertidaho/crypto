@@ -28,12 +28,36 @@
     overflow-x: hidden;
   }
 
+  #block-data {
+    font-size: 0.9rem;
+  }
+
   #sources {
     margin-left: 25%;
   }
 
   #sources
   span {
+    color: blue;
+  }
+
+  h1 {
+    max-width: 99%;
+  }
+
+  #block-cypher {
+    font-size: 0.9rem;
+    word-wrap: break-word;
+   overflow-x: hidden !important;
+   overflow-y: hidden !important;
+  }
+
+  #block-cypher :hover {
+    text-decoration: none;
+    color: darkblue;
+  }
+
+  .explorers {
     color: blue;
   }
 
