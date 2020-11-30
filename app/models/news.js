@@ -66,6 +66,14 @@ export default class News {
         </a>
       `
       }
+      else if (this.newsArray[i].source == "Chaindd") {
+        template +=
+          `
+        <a href="https://english.${[this.newsArray[i].sourceUrl]}.com" target="_blank" style="text-decoration:none;">
+          <span class="mr-3">${this.newsArray[i].source}</span>
+        </a>
+      `
+      }
       else {
         template +=
           `
