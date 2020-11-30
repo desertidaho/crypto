@@ -57,8 +57,13 @@
     color: darkblue;
   }
 
-  .explorers {
+  .explorers,
+  .blockData {
     color: blue;
+  }
+
+  #block-data :hover {
+    color: darkblue !important;
   }
 
   @media only screen and (max-device-width: 780px) {

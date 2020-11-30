@@ -59,7 +59,7 @@ export default class CryptoService {
 
   refresh() {
     setInterval(this.getCrypto, 20000)
-    setInterval(this.getBlockCypher, 600000)
+    setInterval(this.getBlockCypher, 300000)
   }
 
   getBlockCypher() {
