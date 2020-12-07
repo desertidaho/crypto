@@ -45,6 +45,11 @@
     max-width: 99%;
   }
 
+  #mN {
+   color: linear-gradient(to right, rgb(48, 46, 46) 60%, rgb(77, 47, 247));
+
+  }
+
   #block-cypher {
     font-size: 0.9rem;
     word-wrap: break-word;

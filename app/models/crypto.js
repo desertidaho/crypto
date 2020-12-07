@@ -95,7 +95,7 @@ export default class Crypto {
 
   marketCap() {
     return `
-    Crypto Market Cap <a href="https://coinmarketcap.com/charts/" target="_blank" class="blockData" style="text-decoration:none;">${this.marketCapUsd}</a> </br>
+    <a href="https://coinmarketcap.com/charts/" target="_blank" class="blockData" style="text-decoration:none;">Crypto Market Cap ${this.marketCapUsd}</a> </br>
     <a href="https://digitalik.net/btc/sf_model" target="_blank" class="blockData" style="text-decoration:none;">Bitcoin Stock-to-Flow Model</a>
     `
   }
