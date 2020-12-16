@@ -9,7 +9,7 @@ body {
 }
 
 .card-columns {
-    column-count: 3;
+    column-count: 4;
   }
 
   #news-cards {
@@ -31,6 +31,7 @@ body {
   .card-img-top {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    height: 35vh;
   }
 
   #marquee {
@@ -97,8 +98,16 @@ body {
   }
 
    #marquee {
-    background: linear-gradient(to right, rgb(48, 46, 46) 20%, rgb(77, 47, 247));
+    background: linear-gradient(to right, rgb(48, 46, 46) 15%, rgb(77, 47, 247));
     font-size: 0.9rem;
+  }
+
+   .card-img-top {
+    height: 40vh;
+  }
+
+  .card {
+    margin-bottom: 8% !important;
   }
 
 }
