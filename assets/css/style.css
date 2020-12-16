@@ -8,14 +8,20 @@
   }
   
   .card {
-    border: 1.2px solid rgb(153, 153, 153);
+    border: 1px solid rgb(153, 153, 153);
     color: black;
     box-shadow: 2px 2px 0 rgb(165, 165, 165);
+    border-radius: 10px;
   }
 
   .card :hover {
     background-color: rgb(238, 238, 238);
     color: blue;
+  }
+
+  .card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
   }
 
   #marquee {
