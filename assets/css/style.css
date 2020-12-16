@@ -28,9 +28,9 @@ body {
     color: blue;
   }
 
-  .card-img-top {
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+  .card-img-bottom {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     height: 35vh;
   }
 
@@ -102,7 +102,7 @@ body {
     font-size: 0.9rem;
   }
 
-   .card-img-top {
+   .card-img-bottom {
     height: 40vh;
   }
 

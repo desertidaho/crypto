@@ -27,10 +27,11 @@ export default class News {
       template += `
       <a href="${[this.newsArray[i].url]}" target="_blank">
         <div class="card my-3">
-        <img class="card-img-top" src="${this.newsArray[i].img}" alt="Card image">
+        
             <div class="card-body">
               <h6 class="card-title">${this.newsArray[i].title}... [${this.newsArray[i].source}]</h6>
             </div>
+            <img class="card-img-bottom" src="${this.newsArray[i].img}" alt="Card image">
         </div>
       </a>
       `
