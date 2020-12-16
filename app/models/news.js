@@ -26,7 +26,7 @@ export default class News {
     for (let i = 0; i <= this.newsArray.length - 1; i++) {
       template += `
       <a href="${[this.newsArray[i].url]}" target="_blank">
-        <div class="card my-2">
+        <div class="card my-3">
         <img class="card-img-top" src="${this.newsArray[i].img}" alt="Card image">
             <div class="card-body">
               <h6 class="card-title">${this.newsArray[i].title}... [${this.newsArray[i].source}]</h6>

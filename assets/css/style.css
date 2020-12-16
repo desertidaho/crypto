@@ -1,3 +1,13 @@
+body {
+  background-image: linear-gradient(to bottom, rgb(48, 46, 46), white);
+  overflow-x: hidden !important;
+}
+
+.mN {
+  color: white;
+  text-shadow: 3px 0px 0 black;
+}
+
 .card-columns {
     column-count: 3;
   }
@@ -25,13 +35,9 @@
   }
 
   #marquee {
-    background: linear-gradient(to right, rgb(48, 46, 46) 60%, rgb(77, 47, 247));
+    background: linear-gradient(to right, rgb(48, 46, 46) 40%, rgb(77, 47, 247));
     color: white;
     font-size: 0.9rem;
-  }
-
-  body {
-    overflow-x: hidden;
   }
 
   #block-data {
@@ -53,10 +59,10 @@
 
   #mN {
    color: linear-gradient(to right, rgb(48, 46, 46) 60%, rgb(77, 47, 247));
-
   }
 
   #block-cypher {
+    color: white;
     font-size: 0.9rem;
     word-wrap: break-word;
    overflow-x: hidden !important;
@@ -65,16 +71,16 @@
 
   #block-cypher :hover {
     text-decoration: none;
-    color: darkblue;
+    color: blue;
   }
 
   .explorers,
   .blockData {
-    color: blue;
+    color: white;
   }
 
   #block-data :hover {
-    color: darkblue !important;
+    color: blue !important;
   }
 
   @media only screen and (max-device-width: 780px) {
