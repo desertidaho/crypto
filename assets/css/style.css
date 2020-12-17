@@ -3,111 +3,121 @@ body {
   overflow-x: hidden !important;
 }
 
+#top {
+  position: fixed;
+  z-index: 1;
+  min-width: 105vw !important;
+}
+
 .mN {
   color: white;
   text-shadow: 3px 0px 0 black;
 }
 
 .card-columns {
-    column-count: 4;
-  }
+  column-count: 4;
+}
 
-  #news-cards {
-    margin-left: 5%;
-    width: 90%;
-  }
+#news-cards {
+  margin-left: 5%;
+  width: 90%;
+}
   
-  .card {
-    border: 1px solid rgb(153, 153, 153);
-    color: black;
-    box-shadow: 2px 2px 0 rgb(165, 165, 165);
-    border-radius: 10px;
-  }
+.card {
+  border: 1px solid rgb(153, 153, 153);
+  color: black;
+  box-shadow: 2px 2px 0 rgb(165, 165, 165);
+  border-radius: 10px;
+}
 
-  .card :hover {
-    color: blue;
-  }
+.card :hover {
+  color: blue;
+}
 
-  .card-img-bottom {
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    height: 35vh;
-  }
+.card-img-bottom {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+   height: 35vh;
+}
 
-  #marquee {
-    background: linear-gradient(to right, rgb(48, 46, 46) 40%, rgb(77, 47, 247));
-    color: white;
-    font-size: 0.9rem;
-  }
+#marquee {
+  background: linear-gradient(to right, rgb(48, 46, 46) 40%, rgb(77, 47, 247));
+  color: white;
+  font-size: 0.9rem;
+}
 
-  #block-data {
-    font-size: 0.9rem;
-  }
+#block-data {
+   font-size: 0.9rem;
+}
 
-  #sources {
-    margin-left: 25%;
-  }
+#sources {
+  margin-left: 25%;
+}
 
-  #sources
-  span {
-    color: blue;
+#sources
+span {
+  color: blue;
+}
+
+h1 {
+  max-width: 99%;
+}
+
+#mN {
+  color: linear-gradient(to right, rgb(48, 46, 46) 60%, rgb(77, 47, 247));
+}
+
+#block-cypher {
+  color: white;
+  font-size: 0.9rem;
+  word-wrap: break-word;
+  overflow-x: hidden !important;
+  overflow-y: hidden !important;
+}
+
+#block-cypher :hover {
+  text-decoration: none;
+  color: blue;
+}
+
+.explorers,
+.blockData {
+  color: white;
+}
+
+#block-data :hover {
+  color: blue !important;
+}
+
+@media only screen and (max-device-width: 780px) {
+  
+  body {
+    overflow-x: hidden !important;
+  }
+    
+  #top {
+  min-width: 110vw !important;  
   }
 
   h1 {
-    max-width: 99%;
+  margin-left: 0.5rem;
   }
 
-  #mN {
-   color: linear-gradient(to right, rgb(48, 46, 46) 60%, rgb(77, 47, 247));
+  .card-columns {
+  column-count: 1;
+   }
+
+  #marquee {
+  background: linear-gradient(to right, rgb(48, 46, 46) 15%, rgb(77, 47, 247));
+  font-size: 0.9rem;
   }
 
-  #block-cypher {
-    color: white;
-    font-size: 0.9rem;
-    word-wrap: break-word;
-   overflow-x: hidden !important;
-   overflow-y: hidden !important;
-  }
-
-  #block-cypher :hover {
-    text-decoration: none;
-    color: blue;
-  }
-
-  .explorers,
-  .blockData {
-    color: white;
-  }
-
-  #block-data :hover {
-    color: blue !important;
-  }
-
-  @media only screen and (max-device-width: 780px) {
-  
-    body {
-      overflow-x: hidden !important;
-    }
-
-    h1 {
-    margin-left: 0.5rem;
-  }
-
-    .card-columns {
-    column-count: 1;
-  }
-
-   #marquee {
-    background: linear-gradient(to right, rgb(48, 46, 46) 15%, rgb(77, 47, 247));
-    font-size: 0.9rem;
-  }
-
-   .card-img-bottom {
-    height: 40vh;
+  .card-img-bottom {
+  height: 40vh;
   }
 
   .card {
-    margin-bottom: 8% !important;
+  margin-bottom: 8% !important;
   }
 
 }
