@@ -97,6 +97,8 @@ h1 {
     
   #top {
     margin-top: 0px !important;
+    padding-top: 0px !important;
+    min-width: 110vw !important;
   }
 
   h1 {
