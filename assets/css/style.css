@@ -96,28 +96,29 @@ h1 {
   }
     
   #top {
-  min-width: 110vw !important;  
+    margin-top: 0px !important;
+    min-width: 110vw !important;  
   }
 
   h1 {
-  margin-left: 0.5rem;
+    margin-left: 0.5rem;
   }
 
   .card-columns {
-  column-count: 1;
+    column-count: 1;
    }
 
   #marquee {
-  background: linear-gradient(to right, rgb(48, 46, 46) 15%, rgb(77, 47, 247));
-  font-size: 0.9rem;
+    background: linear-gradient(to right, rgb(48, 46, 46) 15%, rgb(77, 47, 247));
+    font-size: 0.9rem;
   }
 
   .card-img-bottom {
-  height: 40vh;
+    height: 40vh;
   }
 
   .card {
-  margin-bottom: 8% !important;
+    margin-bottom: 8% !important;
   }
 
 }
