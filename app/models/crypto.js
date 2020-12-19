@@ -1,66 +1,14 @@
 export default class Crypto {
   constructor(data) {
     for (let i = 0; i < data.length; i++) {
-      if (i == 0) {
-        this.rank0 = data[i].rank
-        this.name0 = data[i].name
-        this.price0 = '$' + Number(data[i].priceUsd).toFixed(2)
-        this.twentyFourHoursChange0 = Number(data[i].changePercent24Hr).toFixed(2)
-      }
-      if (i == 1) {
-        this.rank1 = data[i].rank
-        this.name1 = data[i].name
-        this.price1 = '$' + Number(data[i].priceUsd).toFixed(2);
-        this.twentyFourHoursChange1 = Number(data[i].changePercent24Hr).toFixed(2)
-      }
-      if (i == 2) {
-        this.rank2 = data[i].rank
-        this.name2 = data[i].name
-        this.price2 = '$' + Number(data[i].priceUsd).toFixed(2);
-        this.twentyFourHoursChange2 = Number(data[i].changePercent24Hr).toFixed(2)
-      }
-      if (i == 3) {
-        this.rank3 = data[i].rank
-        this.name3 = data[i].name
-        this.price3 = '$' + Number(data[i].priceUsd).toFixed(2);
-        this.twentyFourHoursChange3 = Number(data[i].changePercent24Hr).toFixed(2)
-      }
-      if (i == 4) {
-        this.rank4 = data[i].rank
-        this.name4 = data[i].name
-        this.price4 = '$' + Number(data[i].priceUsd).toFixed(2);
-        this.twentyFourHoursChange4 = Number(data[i].changePercent24Hr).toFixed(2)
-      }
-      if (i == 5) {
-        this.rank5 = data[i].rank
-        this.name5 = data[i].name
-        this.price5 = '$' + Number(data[i].priceUsd).toFixed(2);
-        this.twentyFourHoursChange5 = Number(data[i].changePercent24Hr).toFixed(2)
-      }
-      if (i == 6) {
-        this.rank6 = data[i].rank
-        this.name6 = data[i].name
-        this.price6 = '$' + Number(data[i].priceUsd).toFixed(2);
-        this.twentyFourHoursChange6 = Number(data[i].changePercent24Hr).toFixed(2)
-      }
-      if (i == 7) {
-        this.rank7 = data[i].rank
-        this.name7 = data[i].name
-        this.price7 = '$' + Number(data[i].priceUsd).toFixed(2);
-        this.twentyFourHoursChange7 = Number(data[i].changePercent24Hr).toFixed(2)
-      }
-      if (i == 8) {
-        this.rank8 = data[i].rank
-        this.name8 = data[i].name
-        this.price8 = '$' + Number(data[i].priceUsd).toFixed(2);
-        this.twentyFourHoursChange8 = Number(data[i].changePercent24Hr).toFixed(2)
-      }
-      if (i == 9) {
-        this.rank9 = data[i].rank
-        this.name9 = data[i].name
-        this.price9 = '$' + Number(data[i].priceUsd).toFixed(2);
-        this.twentyFourHoursChange9 = Number(data[i].changePercent24Hr).toFixed(2)
-      }
+      let propRank = 'rank' + i
+      let propName = 'name' + i
+      let propPrice = 'price' + i
+      let prop24hrChange = 'twentyFourHoursChange' + i
+      this[propRank] = data[i].rank
+      this[propName] = data[i].name
+      this[propPrice] = '$' + Number(data[i].priceUsd).toFixed(2)
+      this[prop24hrChange] = Number(data[i].changePercent24Hr).toFixed(2)
     }
 
     this.marketCapUsd = 0
