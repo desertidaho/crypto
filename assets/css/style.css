@@ -69,7 +69,8 @@ h1 {
 }
 
 #block-cypher,
-#hashrate {
+#hashrate,
+#crypto {
   color: white;
   font-size: 0.9rem;
   word-wrap: break-word;
@@ -81,6 +82,10 @@ h1 {
 #hashrate :hover {
   text-decoration: none;
   color: blue;
+}
+
+#crypto :hover {
+  color: yellow;
 }
 
 .explorers,
