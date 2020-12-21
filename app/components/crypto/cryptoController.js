@@ -17,6 +17,11 @@ function drawBlockCypher() {
   document.querySelector('#block-cypher').innerHTML = template
 }
 
+function drawHashrate() {
+  let template = _cs.Hashrate.hashrateTemplate()
+  document.querySelector('#hashrate').innerHTML = template
+}
+
 
 export default class CryptoController {
   constructor() {
@@ -24,6 +29,8 @@ export default class CryptoController {
     _cs.addSubscriber('crypto', drawMarketCap)
     _cs.addSubscriber('blockCypher', drawBlockCypher)
     _cs.getBlockCypher()
+    _cs.addSubscriber('hashrate', drawHashrate)
+    _cs.getHashrate()
     _cs.getCrypto()
     _cs.refresh()
 

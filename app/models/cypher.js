@@ -9,11 +9,9 @@ export default class BlockCypher {
 
   blockCypherTemplate() {
     this.dateTime = this.timeSince(this.time.split('.')[0])
-    console.log(this.dateTime)
     return `
-    <a href="https://sochain.com/btc" target="_blank" class="blockData">Bitcoin Block Data </a></br>
-    <a href="https://sochain.com/block/BTC/${this.height}" target="_blank" class="blockData">height ${this.height} </a></br>
-    <a href="https://sochain.com/block/BTC/${this.hash}" target="_blank" class="blockData">hash ...${this.hash.substring(this.hash.length - 20)} </a></br>
+    <a href="https://sochain.com/block/BTC/${this.height}" target="_blank" class="blockData">Bitcoin Block Height ${this.height} </a></br>
+    <a href="https://sochain.com/block/BTC/${this.hash}" target="_blank" class="blockData">Bitcoin Block Hash ...${this.hash.substring(this.hash.length - 7)} </a></br>
     <a href="https://live.blockcypher.com/btc/block/${this.hash}" target="_blank" class="mt-2 explorers">Block Cypher</a> </br>
     <a href="https://blockstream.info/block/${this.hash}?expand" target="_blank" class="mt-2 explorers">Block Stream</a> </br>
     <a href="https://sochain.com/block/BTC/${this.hash}" target="_blank" class="mt-2 explorers">SoChain</a>

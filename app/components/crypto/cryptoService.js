@@ -1,5 +1,6 @@
 import Crypto from "../../models/crypto.js";
 import BlockCypher from "../../models/cypher.js";
+import Hashrate from "../../models/hashrate.js";
 
 // @ts-ignore
 const _cryptoApi = axios.create({
@@ -13,17 +14,24 @@ const _blockCypherApi = axios.create({
   timeout: 15000
 });
 
+// @ts-ignore
+const _hashrateApi = axios.create({
+  baseURL: 'https://sochain.com/api/v2/get_info/BTC',
+  timeout: 15000
+});
+
 let _state = {
   crypto: {},
   marketCap: {},
-  blockCypher: {}
+  blockCypher: {},
+  hashrate: {}
 }
 
 let _subscribers = {
   crypto: [],
   marketCap: [],
-  blockCypher: []
-
+  blockCypher: [],
+  hashrate: []
 }
 
 function _setState(prop, data) {
@@ -50,6 +58,10 @@ export default class CryptoService {
     return _state.blockCypher
   }
 
+  get Hashrate() {
+    return _state.hashrate
+  }
+
   getCrypto() {
     _cryptoApi.get()
       .then(res => {
@@ -67,6 +79,14 @@ export default class CryptoService {
       .then(res => {
         console.log(res.data)
         _setState('blockCypher', new BlockCypher(res.data))
+      })
+  }
+
+  getHashrate() {
+    _hashrateApi.get()
+      .then(res => {
+        console.log(res.data)
+        _setState('hashrate', new Hashrate(res.data.data))
       })
   }
 
