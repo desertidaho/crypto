@@ -11,10 +11,12 @@ export default class BlockCypher {
     this.dateTime = this.timeSince(this.time.split('.')[0])
     return `
     <a href="https://sochain.com/block/BTC/${this.height}" target="" class="blockData">Bitcoin Block Height ${this.height} </a></br>
-    <a href="https://sochain.com/block/BTC/${this.hash}" target="" class="blockData">Bitcoin Block Hash ...${this.hash.substring(this.hash.length - 7)} </a></br>
     <a href="https://live.blockcypher.com/btc/block/${this.hash}" target="" class="mt-2 explorers">Block Cypher</a> </br>
     <a href="https://blockstream.info/block/${this.hash}?expand" target="" class="mt-2 explorers">Block Stream</a> </br>
-    <a href="https://sochain.com/block/BTC/${this.hash}" target="" class="mt-2 explorers">SoChain</a>
+    <a href="https://www.g2.com/categories/cryptocurrency-exchanges" class="mt-2 explorers">Exchanges</a> </br>
+    <a href="https://www.g2.com/categories/cryptocurrency-wallets" class="mt-2 explorers">Wallets</a> </br>
+    <a href="https://medium.com/coinmonks/the-biggest-ultimate-2020-cryptocurrency-resource-list-300-resources-4523e47f298" class="mt-2 explorers">Resources</a>
+    
           `
   }
 
