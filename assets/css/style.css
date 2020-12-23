@@ -12,6 +12,11 @@ body {
 .mN {
   color: white;
   text-shadow: 3px 0px 0 black;
+  text-decoration: none !important;
+}
+
+.mN :hover {
+  color: blue;
 }
 
 .card-columns {
