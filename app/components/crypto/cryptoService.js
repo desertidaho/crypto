@@ -4,19 +4,19 @@ import Hashrate from "../../models/hashrate.js";
 
 // @ts-ignore
 const _cryptoApi = axios.create({
-  baseURL: 'https://api.coincap.io/v2/assets',
+  baseURL: 'https://agile-harbor-25896.herokuapp.com/https://api.coincap.io/v2/assets',
   timeout: 15000
 });
 
 // @ts-ignore
 const _blockCypherApi = axios.create({
-  baseURL: 'https://api.blockcypher.com/v1/btc/main',
+  baseURL: 'https://agile-harbor-25896.herokuapp.com/https://api.blockcypher.com/v1/btc/main',
   timeout: 15000
 });
 
 // @ts-ignore
 const _hashrateApi = axios.create({
-  baseURL: 'https://sochain.com/api/v2/get_info/BTC',
+  baseURL: 'https://agile-harbor-25896.herokuapp.com/https://sochain.com/api/v2/get_info/BTC',
   timeout: 15000
 });
 
