@@ -16,7 +16,7 @@ export default class Crypto {
       this.marketCapUsd += parseInt(Number(data[i].marketCapUsd).toFixed())
     };
     this.marketCapUsd = this.marketCapUsd + 10000000000
-    this.marketCapUsd = ('$' + this.marketCapUsd).slice(0, 4) + '.' + ('' + this.marketCapUsd).slice(4, 6) + 'B'
+    this.marketCapUsd = ('$' + this.marketCapUsd).slice(0, 5) + '.' + ('' + this.marketCapUsd).slice(5, 7) + 'B'
   }
 
 
