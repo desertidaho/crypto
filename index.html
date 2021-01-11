@@ -13,6 +13,8 @@
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
+<a name="tip-top"></a>
+
 <body>
 
   <div class="row">
@@ -72,11 +74,19 @@
       </div>
     </div>
 
+    <div class="row">
+      <!--Up arrow-->
+      <div class="col-sm-12 d-flex justify-content-center ml-4 my-4">
+        <a href="#tip-top" id="arrow" class="fa mr-5"></a>
+      </div>
+    </div>
+
   </div>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
     integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
     crossorigin="anonymous"></script>
@@ -86,6 +96,44 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
   <script src="https://kit.fontawesome.com/ef5862cb70.js" crossorigin="anonymous"></script>
   <script type="module" src="app/main.js"></script>
+
+
+  <script>
+    function upArrow() {
+      let chain = document.getElementById('arrow');
+      chain.innerHTML = "&#xf102;";
+
+      setTimeout(function () {
+        chain.innerHTML = "&#xf106;";
+      }, 1000);
+    }
+
+    upArrow();
+
+    // Animate Every 2 Seconds
+    setInterval(upArrow, 2000);
+  </script>
+
+  <!--Smooth scrolling for arrow to top of page-->
+  <script>
+    $(function () {
+      $('a[href*="#"]:not([href="#"])').click(function () {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname ==
+          this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+          if (target.length) {
+            $('html, body').animate({
+              scrollTop: target.offset().tip - top
+            }, 2500);
+            return false;
+          }
+        }
+      });
+    });
+  </script>
+
+
 
 </body>
 
