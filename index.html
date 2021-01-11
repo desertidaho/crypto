@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<a name="tip-top"></a>
+<a name="tiptop"></a>
 
 <body>
 
@@ -76,8 +76,8 @@
 
     <div class="row">
       <!--Up arrow-->
-      <div class="col-sm-12 d-flex justify-content-center ml-4 my-4">
-        <a href="#tip-top" id="arrow" class="fa mr-5"></a>
+      <div class="col-sm-12 d-flex justify-content-center ml-4 mt-4 mb-5" id="arrow-div">
+        <a href="#tiptop" id="arrow" class="fa mr-5"></a>
       </div>
     </div>
 
@@ -124,7 +124,7 @@
           target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
           if (target.length) {
             $('html, body').animate({
-              scrollTop: target.offset().tip - top
+              scrollTop: target.offset().top
             }, 2500);
             return false;
           }
