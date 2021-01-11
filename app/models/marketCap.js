@@ -4,7 +4,6 @@ export default class MarketCap {
   }
 
   marketCapTemplate() {
-    console.log(this.marketCap.length)
     if (this.marketCap.length > 17) {
       this.marketCap = '$' + this.marketCap.slice(0, 1) + '.' + this.marketCap.slice(2, 4) + 'T'
     }
@@ -14,7 +13,7 @@ export default class MarketCap {
     }
 
     return `
-            <a href="https://coinmarketcap.com/charts/" target="" class="blockData">Bitcoin Market Cap ${this.marketCap}</a>
+            <a href="https://coinmarketcap.com/charts/" target="" id="marketCap">Crypto Market Cap ${this.marketCap}</a>
           `
   }
 

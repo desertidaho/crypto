@@ -75,7 +75,8 @@ h1 {
 
 #block-cypher,
 #hashrate,
-#crypto {
+#crypto,
+#marketCap {
   color: white;
   font-size: 0.9rem;
   word-wrap: break-word;
@@ -84,7 +85,8 @@ h1 {
 }
 
 #block-cypher :hover,
-#hashrate :hover {
+#hashrate :hover,
+#marketCap :hover {
   text-decoration: none;
   color: blue;
 }

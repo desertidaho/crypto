@@ -9,7 +9,7 @@ function drawCrypto() {
 
 function drawMarketCap() {
   let template = _cs.MarketCap.marketCapTemplate()
-  document.querySelector('#block-data').innerHTML = template
+  document.querySelector('#marketCap').innerHTML = template
 }
 
 function drawBlockCypher() {
