@@ -8,7 +8,7 @@ function drawCrypto() {
 }
 
 function drawMarketCap() {
-  let template = _cs.Crypto.marketCap()
+  let template = _cs.MarketCap.marketCapTemplate()
   document.querySelector('#block-data').innerHTML = template
 }
 
@@ -26,12 +26,13 @@ function drawHashrate() {
 export default class CryptoController {
   constructor() {
     _cs.addSubscriber('crypto', drawCrypto)
-    _cs.addSubscriber('crypto', drawMarketCap)
+    _cs.addSubscriber('marketCap', drawMarketCap)
     _cs.addSubscriber('blockCypher', drawBlockCypher)
-    _cs.getBlockCypher()
     _cs.addSubscriber('hashrate', drawHashrate)
+    _cs.getBlockCypher()
     _cs.getHashrate()
     _cs.getCrypto()
+    _cs.getMarketCap()
     _cs.refresh()
 
   }

@@ -1,6 +1,7 @@
 import Crypto from "../../models/crypto.js";
 import BlockCypher from "../../models/cypher.js";
 import Hashrate from "../../models/hashrate.js";
+import MarketCap from "../../models/marketCap.js";
 
 // @ts-ignore
 const _cryptoApi = axios.create({
@@ -19,6 +20,14 @@ const _hashrateApi = axios.create({
   baseURL: 'https://agile-harbor-25896.herokuapp.com/https://sochain.com/api/v2/get_info/BTC',
   timeout: 15000
 });
+
+// @ts-ignore
+const _marketCapApi = axios.create({
+  baseURL: 'https://agile-harbor-25896.herokuapp.com/https://pro-api.coinmarketcap.com/v1/global-metrics/quotes/latest',
+  timeout: 15000,
+  headers: { 'X-CMC_PRO_API_KEY': 'a702c794-bac8-4362-bdd4-9fe1ebf70023' }
+});
+
 
 let _state = {
   crypto: {},
@@ -77,7 +86,6 @@ export default class CryptoService {
   getBlockCypher() {
     _blockCypherApi.get()
       .then(res => {
-        console.log(res.data)
         _setState('blockCypher', new BlockCypher(res.data))
       })
   }
@@ -85,8 +93,15 @@ export default class CryptoService {
   getHashrate() {
     _hashrateApi.get()
       .then(res => {
-        console.log(res.data)
         _setState('hashrate', new Hashrate(res.data.data))
+      })
+  }
+
+  getMarketCap() {
+    _marketCapApi.get()
+      .then(res => {
+        console.log(res.data)
+        _setState('marketCap', new MarketCap(res.data.data))
       })
   }
 

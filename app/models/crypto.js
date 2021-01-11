@@ -10,13 +10,6 @@ export default class Crypto {
       this[propPrice] = '$' + Number(data[i].priceUsd).toFixed(2)
       this[prop24hrChange] = Number(data[i].changePercent24Hr).toFixed(2)
     }
-
-    this.marketCapUsd = 0
-    for (let i = 0; i < data.length; i++) {
-      this.marketCapUsd += parseInt(Number(data[i].marketCapUsd).toFixed())
-    };
-    this.marketCapUsd = this.marketCapUsd + 10000000000
-    this.marketCapUsd = ('$' + this.marketCapUsd).slice(0, 2) + '.' + ('' + this.marketCapUsd).slice(1, 4) + 'T'
   }
 
 
@@ -39,13 +32,6 @@ export default class Crypto {
     return `
       Crypto News  (BTC ${this.price0})
           `
-  }
-
-  marketCap() {
-    return `
-    <a href="https://coinmarketcap.com/charts/" target="" class="blockData" style="text-decoration:none;">Crypto Market Cap ${this.marketCapUsd}</a> </br>
-    <a href="https://digitalik.net/btc/sf_model" target="" class="blockData" style="text-decoration:none;">Bitcoin Stock-to-Flow Model</a>
-    `
   }
 
 }
