@@ -14,8 +14,8 @@ export default class BlockCypher {
     <a href="https://live.blockcypher.com/btc/block/${this.hash}" target="" class="mt-2 explorers">BlockCypher</a> </br>
     <a href="https://blockstream.info/block/${this.hash}?expand" target="" class="mt-2 explorers">Blockstream</a> </br>
     <a href="https://medium.com/coinmonks/the-biggest-ultimate-2020-cryptocurrency-resource-list-300-resources-4523e47f298" class="mt-2 explorers">Resources</a> </br>
-    <a href="https://www.g2.com/categories/cryptocurrency-exchanges" class="mt-2 explorers">Exchanges</a> </br>
-    <a href="https://www.g2.com/categories/cryptocurrency-wallets" class="mt-2 explorers">Wallets</a>
+    <a href="https://coinmarketcap.com/rankings/exchanges" class="mt-2 explorers">Exchanges</a> </br>
+    <a href="https://www.cryptowisser.com/wallets" class="mt-2 explorers">Wallets</a>
           `
   }
 
