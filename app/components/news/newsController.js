@@ -2,8 +2,8 @@ import NewsService from "./newsService.js";
 
 const _ns = new NewsService()
 
-function drawNews() {
-  let template = _ns.News.newsTemplate()
+async function drawNews() {
+  let template = await _ns.News.newsTemplate()
   document.querySelector('#news-cards').innerHTML = template
 }
 
