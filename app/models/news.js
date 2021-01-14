@@ -35,7 +35,6 @@ export default class News {
       </a>
       `
     }
-    console.log(template)
     return template
   }
 
