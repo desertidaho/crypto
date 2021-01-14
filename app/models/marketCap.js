@@ -5,7 +5,7 @@ export default class MarketCap {
 
   marketCapTemplate() {
     this.marketCap = (this.marketCap.split('.'))[0].toString()
-    if (this.marketCap.length > 14) {
+    if (this.marketCap.length == 14) {
       this.marketCap = '$' + this.marketCap.slice(0, 2) + '.' + this.marketCap.slice(2, 4) + 'T' //$10.00T
     }
     else if (this.marketCap.length == 13) {
