@@ -13,7 +13,7 @@ export default class BlockCypher {
     <a href="https://sochain.com/block/BTC/${this.height}" target="" class="blockData">Bitcoin Block Height ${this.height} </a></br>
     <a href="https://live.blockcypher.com/btc/block/${this.hash}" target="" class="mt-2 explorers">BlockCypher</a> </br>
     <a href="https://blockstream.info/block/${this.hash}?expand" target="" class="mt-2 explorers">Blockstream</a> </br>
-    <a href="https://medium.com/coinmonks/the-biggest-ultimate-2020-cryptocurrency-resource-list-300-resources-4523e47f298" class="mt-2 explorers">Resources</a> </br>
+    <a href="https://medium.com/coinmonks/the-biggest-ultimate-2020-cryptocurrency-resource-list-300-resources-4523e47f298" target="_blank" class="mt-2 explorers" onclick="window.open('https://bitcoin.org/en/')">Resources</a> </br>
     <a href="https://coinmarketcap.com/rankings/exchanges" class="mt-2 explorers">Exchanges</a> </br>
     <a href="https://www.cryptowisser.com/wallets" class="mt-2 explorers">Wallets</a>
           `
@@ -22,6 +22,5 @@ export default class BlockCypher {
   timeSince(date) {
     return new Date(date)
   }
-
 
 }

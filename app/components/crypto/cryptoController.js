@@ -34,7 +34,8 @@ export default class CryptoController {
     _cs.getCrypto()
     _cs.getMarketCap()
     _cs.refresh()
-
   }
+
+
 
 }
