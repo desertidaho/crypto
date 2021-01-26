@@ -42,7 +42,7 @@ body {
 .card-img-bottom {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  height: 30vh;
+  height: 25vh;
 }
 
 #marquee {
@@ -142,7 +142,7 @@ h1 {
   }
 
   .card-img-bottom {
-    height: 35vh;
+    height: 30vh;
   }
 
   .card {
