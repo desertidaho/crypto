@@ -5,25 +5,25 @@ import MarketCap from "../../models/marketCap.js";
 
 // @ts-ignore
 const _cryptoApi = axios.create({
-  baseURL: 'https://agile-harbor-25896.herokuapp.com/https://api.coincap.io/v2/assets',
+  baseURL: 'https://cors-anywhere.herokuapp.com/https://api.coincap.io/v2/assets',
   timeout: 15000
 });
 
 // @ts-ignore
 const _blockCypherApi = axios.create({
-  baseURL: 'https://agile-harbor-25896.herokuapp.com/https://api.blockcypher.com/v1/btc/main',
+  baseURL: 'https://cors-anywhere.herokuapp.com/https://api.blockcypher.com/v1/btc/main',
   timeout: 15000
 });
 
 // @ts-ignore
 const _hashrateApi = axios.create({
-  baseURL: 'https://agile-harbor-25896.herokuapp.com/https://sochain.com/api/v2/get_info/BTC',
+  baseURL: 'https://cors-anywhere.herokuapp.com/https://sochain.com/api/v2/get_info/BTC',
   timeout: 15000
 });
 
 // @ts-ignore
 const _marketCapApi = axios.create({
-  baseURL: 'https://agile-harbor-25896.herokuapp.com/https://pro-api.coinmarketcap.com/v1/global-metrics/quotes/latest',
+  baseURL: 'https://cors-anywhere.herokuapp.com/https://pro-api.coinmarketcap.com/v1/global-metrics/quotes/latest',
   timeout: 15000,
   headers: { 'X-CMC_PRO_API_KEY': 'a702c794-bac8-4362-bdd4-9fe1ebf70023' }
 });
