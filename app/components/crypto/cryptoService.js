@@ -98,7 +98,7 @@ export default class CryptoService {
   }
 
   getMarketCap() {
-    _marketCapApi.get()
+    _cryptoApi.get()
       .then(res => {
         _setState('marketCap', new MarketCap(res.data.data))
       })

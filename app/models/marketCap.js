@@ -1,6 +1,6 @@
 export default class MarketCap {
   constructor(data) {
-    this.marketCap = (data.quote.USD.total_market_cap).toString()
+    this.marketCap = (data[0].marketCapUsd).toString()
   }
 
   marketCapTemplate() {
@@ -16,7 +16,7 @@ export default class MarketCap {
     }
 
     return `
-            <a href="https://coinmarketcap.com/charts/" target="" id="marketCap">Crypto Market Cap ${this.marketCap}</a>
+            <a href="https://www.livecoinwatch.com/price/Bitcoin-BTC" target="" id="marketCap">Bitcoin Market Cap ${this.marketCap}</a>
           `
   }
 
